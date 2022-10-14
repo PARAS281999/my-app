@@ -1,13 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*background: linear-gradient(45deg, rgb(11, 9, 10),rgba(255, 89, 64, 0.342));*/
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.Header{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Images {
+  /*display: flex;*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px;
+  margin-left: 60px;
+}
+
+.Images img{
+  /*width: 100%;
+  height: 100%;*/
+  border-radius: 5px;
+  box-shadow:20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin-left: 50px;
+  padding-left: 20px;
+  max-width: 450px;
+}
+.Images img:hover{
+  background-color: rgba(220, 221, 245, 0.678);
+}
+.Images p{
+font-size: 50px;
+text-decoration: none;
+text-align: start;
+line-height: 1;
+margin-left: 60px;
+letter-spacing: 2px;
+text-transform: uppercase;
+font-weight: 500;
+}
+.Images #lamborginni{
+    border-radius: 5px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    background-color: black;
+    margin-left: 50px;
+    padding-left: 20px;
+    max-width: 500px;
+  width: 20%;
+  background-size: cover;
+}
+
+.primary-button {
+  font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 00.2s;
+    margin-left: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.primary-button:hover{
+  background-color: rgba(220, 221, 245, 0.571);
+}
+.Images div{
+  margin: 20px;
+  padding: 10px;
+}
+/*.products {
+  display: flex;
+  position: relative;
+}*/
+/*.products p{
+  position: absolute;
+}*/
+.Images #ferrari{
+  border-radius: 5px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin-left: 50px;
+  padding-left: 20px;
+width: 75%;
+background-size: cover;
+max-width: 450px;
+}
+.Images #ferrari:hover{
+  background-color: rgba(220, 221, 245, 0.678);
+}
+.card-image img{
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 1rem;
+}
+.card-wrapper{
+  margin: 0;
+}
+.sidebar{
+  width: 30vh;
+  height: 40vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-left:25px;
+}
+.sidebar:hover{
+  background-color: rgba(43, 43, 45, 0.548);
+}
+.navbar-brand{
+  width: 60%;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.navbar{
+  width: 100%;
+}
+.nav-link{
+  color: #fff;
+  font-weight: 400;
+  padding: 40px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.form-inline{
+  width: 50%;
+  padding: 5px;
+} 
+
+@media (max-width:799px) {
+
+  .Images img {
+    width: 100%;
+    padding-right: 40px;
+}
+.Images div {
+   margin: 1px;
+   padding: 0px;
+}
+.Images p {
+  font-size: 20px;
+  margin-left: 30px;
+}
+.primary-button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+  margin-left: 10px;;
+}
+.box .row h2 {
+margin-left: 20px;
+}
+.box p {
+  padding-left: 17px;
+  font-size: 17px;
+}
 }
