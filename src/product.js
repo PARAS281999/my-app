@@ -4,6 +4,9 @@ import Index2 from './Index2.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slider from 'react-slick/lib/slider';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Exploremore from './components/Exploremore';
 
 class Product extends React.Component{
   state = {
@@ -28,36 +31,39 @@ class Product extends React.Component{
   render(){
     const {products}=this.state;
     return(
+      <><div>
+        <Navbar />
+      </div><div className='app'>
+          {products.map(item => (
+            <div className='details'>
+              <div className='big-img'>
+                <img src={item.src[0]} alt="" />
+              </div>
 
-      <div className='app'>
-        {
-              products.map(item =>(
-                <div className='details'>
-                  <div className='big-img'>
-                  <img src={item.src[0]}alt=""/>
-                  </div>
+              <div className='box'>
+                <h1>${item.price}</h1>
+                <div className='row'>
+                  <h2>{item.title}</h2>
 
-                  <div className='box'>
-                  <h1>${item.price}</h1>
-                  <div className='row'>
-                    <h2>{item.title}</h2>
-                    
-                    </div>
-                    <p>{item.description}</p>
-                    <p>{item.content}</p>
-
-                    <div className='thumb'>
-                      {
-                        item.src.map(img =>(
-                          <img src={img} alt=''/>
-                        ))
-                      }
-                      </div>
-                  </div>
                 </div>
-              ))
-        }
-    </div>
+                <p>{item.description}</p>
+                <p>{item.content}</p>
+
+                <div className='thumb'>
+                  {item.src.map(img => (
+                    <img src={img} alt='' />
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div>
+          <Exploremore />
+        </div>
+        <div>
+          <Footer />
+        </div></>
     );
   };
 }

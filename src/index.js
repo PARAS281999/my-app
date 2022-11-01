@@ -8,6 +8,7 @@ import Product from "./product";
 import Product2 from './Product2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Contact from './Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -15,7 +16,8 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} /> 
         <Route path='/product' element={<Product />} />
-        <Route path='/product2' element={<Product2 />}>
+        <Route path='/product2' element={<Product2 />} />
+        <Route path='/contact' element={<Contact />}>
            </Route>
       </Routes>
     </BrowserRouter>

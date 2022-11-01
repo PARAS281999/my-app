@@ -22,16 +22,16 @@ export default function SimpleSlider() {
         <img src="https://media.zigcdn.com/media/model/2018/May/porsche-carrera-gt-right_320x160.jpg" />
       </div>
       <div className="card-image">
-        <img src="https://m.atcdn.co.uk/a/media/8e47b229373043e8b13ebbbbbafa93cf.jpg" />
+        <img src="https://files.porsche.com/filestore/image/multimedia/none/992-gt3-modelimage-sideshot/model/765dfc51-51bc-11eb-80d1-005056bbdc38/porsche-model.png" />
       </div>
       <div className="card-image">
-        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F01%2F2005-porsche-carrera-gt-bring-a-trailer-auction-record-2m-usd-tw.jpg?w=960&cbr=1&q=90&fit=max" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5zb8OoUs5XMuqZCj-HZ7kz1Fw_wFDVHe3mh54YZrYiiDdsDJXMQfwKtVpNyMk4Abww&usqp=CAU" />
       </div>
       <div className="card-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yz3x6M9_cSVouUx8X1AfTilGDZ8jaVxG8g&usqp=CAU" />
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/Ferrari-458-Speciale/2585/1560763589554/front-left-side-47.jpg" />
       </div>
       <div className="card-image">
-        <img src="https://www.yenikoymotors.com/img/araclar/1856/73.jpg" />
+        <img src="https://360view.hum3d.com/zoom/W-Motors/W-Motors_Lykan_hypersport_2012_1000_0002.jpg" />
       </div>
       <div className="card-image">
         <img src="https://c8.alamy.com/comp/2DE5MB8/yellow-ferrari-458-italia-spider-at-raf-benson-oxfordshire-uk-2DE5MB8.jpg" />

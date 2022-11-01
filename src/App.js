@@ -7,6 +7,7 @@ import Product from "./product";
 import Slick from "./Slick"
 import Sideslider from './components/Sideslider';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 
@@ -32,9 +33,11 @@ const App = () => {
     <div className='container mt-5-carousel'>
       <Slick />
       </div>
-
       <div className='sidebar'><Sideslider /></div>
-
+      <div className='Heading'>
+      <h1>Explore Our Range -</h1>
+      <p>You Would Be Suprised</p>
+      </div>
     <div className="Header">
         <div className='Images'>
           <img src={porsche} alt="Porsche"></img>
@@ -103,7 +106,10 @@ const App = () => {
             </button>
           </div>
         </div>
-      </div></>
+      </div>
+     <div>
+        <Footer />
+        </div></>
   );
 }
 

@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import Exploremore from './components/Exploremore';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 class Product2 extends React.Component{
   state = {
@@ -24,36 +27,39 @@ class Product2 extends React.Component{
   render(){
     const {products}=this.state;
     return(
+      <><div>
+        <Navbar />
+      </div><div className='app'>
+          {products.map(item => (
+            <div className='details'>
+              <div className='big-img'>
+                <img src={item.src[0]} alt="" />
+              </div>
 
-      <div className='app'>
-        {
-              products.map(item =>(
-                <div className='details'>
-                  <div className='big-img'>
-                  <img src={item.src[0]}alt=""/>
-                  </div>
+              <div className='box'>
+                <h1>${item.price}</h1>
+                <div className='row'>
+                  <h2>{item.title}</h2>
 
-                  <div className='box'>
-                  <h1>${item.price}</h1>
-                  <div className='row'>
-                    <h2>{item.title}</h2>
-                    
-                    </div>
-                    <p>{item.description}</p>
-                    <p>{item.content}</p>
-
-                    <div className='thumb'>
-                      {
-                        item.src.map(img =>(
-                          <img src={img} alt=''/>
-                        ))
-                      }
-                      </div>
-                  </div>
                 </div>
-              ))
-        }
-    </div>
+                <p>{item.description}</p>
+                <p>{item.content}</p>
+
+                <div className='thumb'>
+                  {item.src.map(img => (
+                    <img src={img} alt='' />
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div>
+          <Exploremore />
+        </div>
+        <div>
+          <Footer />
+          </div></>
     );
   };
 }
